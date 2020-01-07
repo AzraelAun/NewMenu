@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menu.Practical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/practical"
+        >
+
+        <ImageView
+            android:id="@+id/bin3"
+            android:layout_width="95dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/bin1"
+            app:srcCompat="@drawable/bin2" />
+
+        <ImageView
+            android:id="@+id/bin4"
+            android:layout_width="79dp"
+            android:layout_height="133dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toEndOf="@+id/bin2"
+            app:srcCompat="@drawable/bin4" />
+
+        <ImageView
+            android:id="@+id/bin1"
+            android:layout_width="94dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bin1" />
+
+        <ImageView
+            android:id="@+id/bin2"
+            android:layout_width="98dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginBottom="96dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bin3" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/chelsea_market"
+            android:text="@string/timeLeft"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/garbage1"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bandaid" />
+
+        <ImageView
+            android:id="@+id/garbage6"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dryleaf" />
+
+        <ImageView
+            android:id="@+id/garbage4"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/garbage6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lockpad" />
+
+        <ImageView
+            android:id="@+id/garbage2"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage1"
+            app:srcCompat="@drawable/sponge" />
+
+        <ImageView
+            android:id="@+id/garbage7"
+            android:layout_width="75dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage6"
+            app:srcCompat="@drawable/watermelon" />
+
+        <ImageView
+            android:id="@+id/garbage8"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="72dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage7"
+            app:srcCompat="@drawable/makeup" />
+
+        <ImageView
+            android:id="@+id/garbage5"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/bathtub"
+            app:layout_constraintEnd_toStartOf="@+id/garbage8"
+            app:layout_constraintHorizontal_bias="0.618"
+            app:layout_constraintStart_toEndOf="@+id/garbage2"
+            app:layout_constraintTop_toBottomOf="@+id/garbage4" />
+
+        <ImageView
+            android:id="@+id/garbage3"
+            android:layout_width="81dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/toothpaste"
+            app:layout_constraintEnd_toStartOf="@+id/garbage5"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

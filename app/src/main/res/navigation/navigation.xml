@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.menu.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_tutorial"
+            app:destination="@id/tutorial" />
+        <action
+            android:id="@+id/action_menu_to_practical"
+            app:destination="@id/practical" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorial"
+        android:name="com.example.menu.Tutorial"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/practical"
+        android:name="com.example.menu.Practical"
+        android:label="fragment_practical"
+        tools:layout="@layout/fragment_practical" >
+        <action
+            android:id="@+id/action_practical_to_completePractical"
+            app:destination="@id/completePractical" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.menu.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/completePractical"
+        android:name="com.example.menu.CompletePractical"
+        android:label="CompletePractical" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.menu.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.menu.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+</navigation>
